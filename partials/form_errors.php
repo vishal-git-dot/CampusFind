@@ -1,0 +1,1 @@
+<?php if (!empty($errors)): ?><div class="form-errors" role="alert"><strong>Please check the following:</strong><ul><?php foreach($errors as $error): ?><li><?= e($error) ?></li><?php endforeach; ?></ul></div><?php endif; ?>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">CampusFind animated Lost and Found illustration</title>
+<desc id="desc">Minimal campus illustration connecting a lost item to a found item with a location pin.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#f7f9fc"/><stop offset="1" stop-color="#eef3f8"/>
+</linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#7c3aed"/>
+</linearGradient>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+<feDropShadow dx="0" dy="12" stdDeviation="16" flood-opacity=".12"/>
+</filter>
+<style>
+.label{font:700 18px Inter,ui-sans-serif,system-ui,sans-serif;fill:#162033}
+.small{font:500 14px Inter,ui-sans-serif,system-ui,sans-serif;fill:#64748b}
+.title{font:800 38px Inter,ui-sans-serif,system-ui,sans-serif;fill:#111827;letter-spacing:-1px}
+</style>
+</defs>
+
+<rect width="1200" height="430" rx="32" fill="url(#bg)"/>
+
+<g opacity=".55" fill="none" stroke="#c8d2df" stroke-width="3">
+<path d="M70 350H1130"/>
+<path d="M130 350V300h70v50M225 350V275h85v75M335 350V310h60v40M820 350V290h75v60M915 350V265h95v85"/>
+</g>
+
+<text x="70" y="90" class="title">CampusFind</text>
+<text x="72" y="122" class="small">Lost &amp; Found, made simple for campus.</text>
+
+<g filter="url(#shadow)">
+<rect x="70" y="165" width="300" height="135" rx="22" fill="#fff"/>
+<circle cx="112" cy="207" r="23" fill="#eef2ff"/>
+<rect x="101" y="196" width="22" height="16" rx="3" fill="#4f46e5"/>
+<text x="150" y="204" class="label">Lost item</text>
+<text x="150" y="230" class="small">Black backpack</text>
+<rect x="100" y="258" width="110" height="8" rx="4" fill="#e2e8f0"/>
+<rect x="222" y="258" width="78" height="8" rx="4" fill="#e2e8f0"/>
+</g>
+
+<g filter="url(#shadow)">
+<rect x="830" y="165" width="300" height="135" rx="22" fill="#fff"/>
+<circle cx="872" cy="207" r="23" fill="#ecfdf5"/>
+<path d="M861 207l8 8 14-17" fill="none" stroke="#059669" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="910" y="204" class="label">Found item</text>
+<text x="910" y="230" class="small">Black backpack</text>
+<rect x="860" y="258" width="110" height="8" rx="4" fill="#e2e8f0"/>
+<rect x="982" y="258" width="78" height="8" rx="4" fill="#e2e8f0"/>
+</g>
+
+<path d="M390 232 C520 165, 680 165, 810 232" fill="none" stroke="url(#accent)" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 14">
+<animate attributeName="stroke-dashoffset" from="0" to="-52" dur="1.8s" repeatCount="indefinite"/>
+</path>
+
+<circle r="8" fill="#2563eb">
+<animateMotion dur="2.6s" repeatCount="indefinite" path="M390 232 C520 165, 680 165, 810 232"/>
+</circle>
+
+<g transform="translate(600 238)">
+<circle cx="0" cy="0" r="52" fill="#fff" opacity=".96" filter="url(#shadow)"/>
+<path d="M0 29c-8-12-23-28-23-40a23 23 0 1 1 46 0c0 12-15 28-23 40Z" fill="none" stroke="#2563eb" stroke-width="4"/>
+<circle cx="0" cy="-7" r="18" fill="none" stroke="#2563eb" stroke-width="4"/>
+<circle cx="0" cy="-7" r="6" fill="#2563eb"/>
+</g>
+
+<circle cx="600" cy="238" r="76" fill="none" stroke="#7c3aed" stroke-width="2" opacity=".18">
+<animate attributeName="r" values="58;100;58" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values=".22;0;.22" dur="3s" repeatCount="indefinite"/>
+</circle>
+
+<g fill="#94a3b8">
+<circle cx="430" cy="110" r="4"/><circle cx="465" cy="110" r="4"/>
+<circle cx="735" cy="110" r="4"/><circle cx="770" cy="110" r="4"/>
+</g>
+
+<text x="600" y="385" text-anchor="middle" class="small">Search • Connect • Return</text>
+</svg>
